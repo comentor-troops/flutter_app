@@ -90,7 +90,7 @@ class RegisterScreen extends GetView<RegisterController> {
             const SizedBox(height: 32),
             NormalButtonWidget(
               title: "Register",
-              onPressed: () => Get.offNamed(AppRouters.main),
+              onPressed: () => Get.toNamed(AppRouters.main),
             ),
             const SizedBox(height: 32),
             Row(
@@ -121,7 +121,7 @@ class RegisterScreen extends GetView<RegisterController> {
             const SizedBox(height: 32),
             Center(
               child: FormFooterWidget(
-                onPressed: () => Get.offNamed(AppRouters.login),
+                onPressed: () => Get.toNamed(AppRouters.login),
                 title: "Don't you have an account? ",
                 subtitle: "Sign In",
               ),

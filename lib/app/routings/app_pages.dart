@@ -14,6 +14,8 @@ import '../modules/main/main_screen.dart';
 import '../modules/main/main_binding.dart';
 import '../modules/onboarding/onboarding_binding.dart';
 import '../modules/onboarding/onboarding_screen.dart';
+import '../modules/profile/profile_binding.dart';
+import '../modules/profile/profile_screen.dart';
 import '../modules/proposal/chatsroom/chats_room_screen.dart';
 import '../modules/proposal/proposal_binding.dart';
 import '../modules/proposal/proposal_screen.dart';
@@ -72,6 +74,11 @@ class AppPages {
       name: AppRouters.chatsRoom,
       page: () => const ChatsRoomScreen(),
       binding: ProposalBinding(),
+    ),
+    GetPage(
+      name: AppRouters.profile,
+      page: () => const ProfileScreen(),
+      binding: ProfileBinding(),
     ),
   ];
 }

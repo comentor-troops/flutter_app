@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/app/modules/profile/profile_screen.dart';
 
 import 'package:get/get.dart';
 import '../../config/size_config.dart';
@@ -21,7 +22,7 @@ class MainScreen extends GetView<MainController> {
               const HomeScreen(),
               const ProposalScreen(),
               Container(),
-              Container(),
+              const ProfileScreen()
             ],
           ),
           bottomNavigationBar: Theme(
